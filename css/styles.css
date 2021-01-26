@@ -38,16 +38,9 @@ body {
 }
 
 /*------------общие стили------------*/
-.flex {
-  /*------------проверить!!------------*/
-  display: block;
 
-  margin-right: 50px;
-  margin-top: 24px;
-  margin-bottom: 25px;
-  /*------------проверить!!------------*/
-}
 .web-logo {
+  display: block;
   color: var(--accent-color);
   font-family: var(--logo-font);
   font-weight: 700;
@@ -74,12 +67,16 @@ body {
 }
 
 .footer {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--footer-background-color);
 }
 
 .header {
+  padding: 24px 0px;
+  border-bottom: 1px solid #ececec;
+
   background-color: var(--header-background-color);
 }
 
@@ -134,8 +131,6 @@ body {
 }
 .site-nav .site-nav-links {
   margin-left: 43px;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -147,6 +142,9 @@ body {
 /*------------конец блок nav-----------------------*/
 
 /*-----------блок contacts footer--------------------*/
+.address .web-logo {
+  margin-bottom: 24px;
+}
 
 .auth-nav-footer .link {
   color: var(--contacts-color);
@@ -156,7 +154,9 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
 }
-
+.adress-list:not(:last-child) {
+  margin-bottom: 9px;
+}
 /*-----------блок contacts header------------------*/
 .auth-nav .link-header {
   color: var(--main-color);
@@ -170,10 +170,6 @@ body {
   margin-left: 50px;
 }
 
-.auth-nav .auth-nav-links {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
 /*-----------блок contacts all-------------------*/
 .auth-nav .link:hover,
 .auth-nav .link:focus,
@@ -203,6 +199,7 @@ body {
 
 .hero {
   text-align: center;
+  padding: 200px 15px;
 }
 .main-header {
   margin-top: 0px;
@@ -235,7 +232,6 @@ body {
 .company-features {
   display: flex;
   justify-content: center;
-  text-align: center;
   flex-wrap: wrap;
 }
 
@@ -332,18 +328,25 @@ body {
 /*=======конец стили для файла index.html=========*/
 
 /*===========стили для файла portfolio.html=======*/
+
+.portfolio {
+  padding: 94px 0px;
+  background: var(--main-background-color);
+}
 /*----------стили для галерея---------------------*/
 
 .galery .desc {
   margin: 0px;
-  padding: 0px 24px;
+
   color: var(--main-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
 }
-
+.galery-text {
+  padding: 20px 24px;
+}
 .galery-nav .galery-button:hover,
 .galery-nav .galery-button:focus {
   background-color: var(--accent-color);
@@ -362,9 +365,9 @@ body {
   letter-spacing: 0.03em;
 }
 .galery-header {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 4px;
-  padding: 0px 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -372,9 +375,13 @@ body {
 }
 .galery-img {
   height: 404px;
+
+  border: 1px solid #eeeeee;
 }
 .galery-nav {
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .galery-nav,
 .galery {
