@@ -74,6 +74,8 @@ body {
 }
 
 .footer {
+  margin-top: 60px;
+  margin-bottom: 60px;
   background-color: var(--footer-background-color);
 }
 
@@ -103,11 +105,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
-}
-
-.content {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .deleted-header {
@@ -159,10 +156,7 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
 }
-.address {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
+
 /*-----------блок contacts header------------------*/
 .auth-nav .link-header {
   color: var(--main-color);
@@ -241,11 +235,12 @@ body {
 .company-features {
   display: flex;
   justify-content: center;
-
-  margin: 0px auto;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .about-company {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .company-features .desc {
@@ -278,15 +273,15 @@ body {
 /*-----------конец блок компания------------------*/
 
 /*-------------блок чем занимаемся----------------*/
-
-.our-work-lists,
-.our-team {
+.our-work-lists {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
 }
-
+.our-work {
+  padding-bottom: 94px;
+}
 .our-work-lists .work-list:not(:last-child) {
   margin-right: 30px;
 }
@@ -318,7 +313,17 @@ body {
   letter-spacing: 0.03em;
 }
 
+.our-team {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--secondary-background-color);
 }
 
